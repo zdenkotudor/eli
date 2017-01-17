@@ -5,6 +5,7 @@
 const helpers = require('./helpers');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 /**
  * Webpack Plugins
@@ -120,10 +121,10 @@ module.exports = function (env) {
      * See: http://webpack.github.io/docs/configuration.html#plugins
      */
     plugins: [
-
+      new BundleAnalyzerPlugin(),
       /**
        * Plugin: ExtractTextPlugin
-       * Description: Extracts imported CSS files into external stylesheet 
+       * Description: Extracts imported CSS files into external stylesheet
        *
        * See: https://github.com/webpack/extract-text-webpack-plugin
        */
