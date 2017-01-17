@@ -7,8 +7,7 @@ import { AppState } from './app.service';
   styleUrls: ['./app.component.css'],
   template: `
     <nav>
-      <a [routerLink]="['./']" routerLinkActive="active">Index</a>
-      <a [routerLink]="['./home']" routerLinkActive="active">Home</a>
+      <a [routerLink]="['./']" routerLinkActive="active">Home</a>
       <a [routerLink]="['./about']" routerLinkActive="active">About</a>
     </nav>
 

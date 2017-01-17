@@ -11,13 +11,12 @@ import { Title } from './title/title.service';
 export class HomeComponent implements OnInit {
   public localState = { value: '' };
 
-  constructor(
-    public appState: AppState,
-    public title: Title
-  ) {}
+  constructor(public appState: AppState, public title: Title) {
+
+  }
 
   public ngOnInit() {
-    console.log('hello `Home` component');
+
   }
 
   public submitState(value: string) {
