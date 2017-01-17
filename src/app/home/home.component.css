@@ -1,1 +1,17 @@
-/*styles for home content only*/
+.bio-container {
+  display: flex;
+}
+
+.bio {
+  width: 50%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.photo {
+  width: 20%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

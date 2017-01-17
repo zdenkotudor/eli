@@ -1,7 +1,4 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -12,19 +9,15 @@ import { ActivatedRoute } from '@angular/router';
 export class AboutComponent implements OnInit {
 
   public localState: any;
-  constructor(
-    public route: ActivatedRoute
-  ) {}
+  constructor(public route: ActivatedRoute) {}
 
   public ngOnInit() {
     this.route
       .data
       .subscribe((data: any) => {
-        // your resolved data from route
         this.localState = data.yourData;
       });
 
-    console.log('hello `About` component');
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);

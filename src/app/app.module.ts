@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { XLargeDirective } from './home/x-large/x-large.directive';
 import '../styles/styles.scss';
 import '../styles/headings.css';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -37,7 +38,8 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     NoContentComponent,
-    XLargeDirective
+    XLargeDirective,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

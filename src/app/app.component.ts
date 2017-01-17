@@ -5,16 +5,7 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.component.css'],
-  template: `
-    <nav>
-      <a [routerLink]="['./']" routerLinkActive="active">Home</a>
-      <a [routerLink]="['./about']" routerLinkActive="active">About</a>
-    </nav>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-  `
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
   constructor(public appState: AppState) {}
