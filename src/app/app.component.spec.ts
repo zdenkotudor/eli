@@ -1,14 +1,9 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import {
-  inject,
-  async,
-  TestBed,
-  ComponentFixture
-} from '@angular/core/testing';
-
-// Load the implementations that should be tested
+import { async, TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { AppState } from './app.service';
+
+// Load the implementations that should be tested
 
 describe(`App`, () => {
   let comp: AppComponent;

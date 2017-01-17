@@ -3,12 +3,9 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class Title {
-
   public value = 'Angular 2';
 
-  constructor(
-    public http: Http
-  ) {}
+  constructor(public http: Http) {}
 
   public getData() {
     console.log('Title#getData(): Get Data');
@@ -18,5 +15,4 @@ export class Title {
       value: 'AngularClass'
     };
   }
-
 }
